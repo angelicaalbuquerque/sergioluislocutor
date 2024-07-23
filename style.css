@@ -24,12 +24,22 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    61deg,
-    rgb(119 160 190) 10%,
-    rgb(255 179 98) 48%,
-    rgb(12 111 105) 100%
-  );
+  /* background: linear-gradient(61deg, #77a0be 10%, #ffb362 48%, #0c6f69 100%); */
+  background: linear-gradient(-45deg, #519ec7, #ffb362, #0c6f69);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 body * {
