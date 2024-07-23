@@ -7,15 +7,15 @@
 
 /* VARIABLES AND DARK/LIGHT MODE */
 :root {
-  --title: white;
-  --text-color: white;
-  --sub-text-color: #d1d1d1;
-  --bg-url: url(./src/assets/bg-mobile.jpg);
+  --title: #f9bc60;
+  --subtitle: #e8e4e6;
+  --text-color: #d3d1d2;
+  --button-text-color: #fffffe;
+  --button-border-color: #fffffe;
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: rgba(255, 255, 255, 0.05);
-  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --surface-color: #ff8906;
+  --surface-color-hover: #f25f4c;
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --swith-bg-url: url(src/assets/MoonStars.svg);
 }
 
 /* GENERAL */
@@ -24,11 +24,12 @@ html {
 }
 
 body {
-  background: linear-gradient(to bottom, #262e7e, #a8d5f7);
+  /* background: linear-gradient(to bottom, #003d7b, #3192f7); */
+  background-color: #012f5e;
 }
 
 body * {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--text-color);
 }
 
@@ -46,18 +47,28 @@ body * {
 }
 
 #profile img {
-  width: 112px;
+  width: 150px;
 }
 
 #profile h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 48px;
   color: var(--title);
   margin: 12px 0;
 }
 
 #profile p {
+  font-size: 16px;
+  font-weight: bold;
   margin-top: 16px;
-  color: var(--sub-text-color);
-  margin-top: 4px;
+  color: var(--subtitle);
+}
+
+#profile p + p {
+  margin-top: 16px;
+  font-weight: normal;
+  color: var(--text-color);
 }
 
 /* LISTA/LINKS */
@@ -76,6 +87,7 @@ ul li a {
   padding: 16px 24px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
+  color: var(--button-text-color);
   border-radius: 8px;
   backdrop-filter: blur(4px);
   --webkit-backdrop-filter: blur(4px);
@@ -86,7 +98,7 @@ ul li a {
 
 ul li a:hover {
   background: var(--surface-color-hover);
-  border: 1.5px solid var(--text-color);
+  border: 1.5px solid var(--button-border-color);
 }
 
 /* ICONS */
@@ -115,34 +127,4 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
-}
-
-/* MEDIA QUERIES */
-@media (min-width: 700px) {
-  :root {
-    --bg-url: url(src/assets/bg-desktop.jpg);
-  }
-
-  .light {
-    --bg-url: url(src/assets/bg-desktop-light.jpg);
-  }
-}
-
-/* ANIMATION */
-@keyframes slide-in {
-  from {
-    left: 0;
-  }
-  to {
-    left: 50%;
-  }
-}
-
-@keyframes slide-back {
-  from {
-    left: 50%;
-  }
-  to {
-    left: 0;
-  }
 }
