@@ -64,10 +64,10 @@ body * {
   width: 150px;
 }
 
-#profile h2 {
+#profile h1 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 40px;
   color: var(--title);
   margin: 12px 0;
 }
