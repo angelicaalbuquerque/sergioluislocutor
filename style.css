@@ -7,14 +7,14 @@
 
 /* VARIABLES AND DARK/LIGHT MODE */
 :root {
-  --title: #f9bc60;
-  --subtitle: #e8e4e6;
-  --text-color: #d3d1d2;
+  --title: #2b2c34;
+  --subtitle: #2a2a2a;
+  --text-color: #2b2c34;
   --button-text-color: #fffffe;
   --button-border-color: #fffffe;
   --stroke-color: rgba(255, 255, 255, 0.5);
-  --surface-color: #ff8906;
-  --surface-color-hover: #f25f4c;
+  --surface-color: #077380;
+  --surface-color-hover: #f45d48;
   --highlight-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -24,8 +24,12 @@ html {
 }
 
 body {
-  /* background: linear-gradient(to bottom, #003d7b, #3192f7); */
-  background-color: #012f5e;
+  background: linear-gradient(
+    61deg,
+    rgb(119 160 190) 10%,
+    rgb(255 179 98) 48%,
+    rgb(12 111 105) 100%
+  );
 }
 
 body * {
@@ -51,7 +55,7 @@ body * {
 }
 
 #profile h2 {
-  font-family: "Merriweather", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 48px;
   color: var(--title);
@@ -105,7 +109,7 @@ ul li a:hover {
 #social-links {
   display: flex;
   justify-content: center;
-  padding: 24px 0;
+  padding: 16px 0 0;
   font-size: 24px;
 }
 
