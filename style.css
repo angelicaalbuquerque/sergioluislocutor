@@ -25,7 +25,8 @@ html {
 
 body {
   /* background: linear-gradient(61deg, #77a0be 10%, #ffb362 48%, #0c6f69 100%); */
-  background: linear-gradient(-45deg, #519ec7, #ffb362, #0c6f69);
+  /* background: linear-gradient(-45deg, #519ec7, #ffb362, #0c6f69); */
+  background: linear-gradient(61deg, #77a0be 10%, #ffb67d 48%, #0d8a5a 100%);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
@@ -113,6 +114,21 @@ ul li a {
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--button-border-color);
+}
+
+/* Midia */
+h2 {
+  margin: 12px 0 16px;
+  text-align: center;
+}
+
+h2 + p {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+iframe {
+  margin-bottom: 24px;
 }
 
 /* ICONS */
